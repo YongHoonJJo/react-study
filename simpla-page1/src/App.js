@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 
+import Input from './Components/Input'
+import Button from './Components/Button'
+
 function App() {
   const [title, setTitle] = useState('LOGIN')
 
@@ -10,7 +13,9 @@ function App() {
   return (
     <div>
       <h1>{title}</h1>
-      <button onClick={handleChange}>click</button>
+      <Input label='E-Mail' type='text' />
+      <Input label='Password' type='password' />
+      <Button onClick={handleChange}>click</Button>
     </div>
   );
 }
