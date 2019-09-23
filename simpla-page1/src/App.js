@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function App() {
+  const [title, setTitle] = useState('LOGIN')
+
+  const handleChange = () => {
+    setTitle('ReactJS!!')
+  }
+
   return (
     <div>
-      <h1>Simple Page 1</h1>
+      <h1>{title}</h1>
+      <button onClick={handleChange}>click</button>
     </div>
   );
 }
