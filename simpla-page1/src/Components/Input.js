@@ -12,6 +12,7 @@ const Input = ({label='', type='text'}) => {
 
 export default Input
 
+// styled-components를 이용하여 다음과 같이 style도 component화 시킬수 있다.
 const Wrap = styled.div`
   margin: 20px 0;
 `
